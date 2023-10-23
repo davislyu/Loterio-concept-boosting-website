@@ -1,0 +1,120 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Martel', serif; */
+
+
+
+}
+
+.main-about {
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(10, 10, 10, 0.829), rgba(0, 0, 0, 0.426)), url('../../assets/aboutBackground.jpg');
+    background-size: cover;  /* This makes sure it covers the div */
+    background-position: center center;  /* Centers the image */
+    background-attachment: fixed;  /* Keeps the image fixed on scroll */
+    background-repeat: no-repeat;  /* Ensures the image doesn't repeat */
+    
+}
+
+
+.title-about{
+    max-width: 100%;
+    background: rgb(0, 33, 65);
+    color: white;
+    opacity: 0.8;
+    margin-top: 17px;
+    height: fit-content;
+
+}
+.title-about h1{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: 200;
+
+}
+
+.aboutUs-desc{
+    background: rgb(0, 33, 65);
+    width: 40%;
+    height: fit-content;
+    /* margin-left: auto; */
+
+    border-radius: 20px;
+    display: flex;
+    padding: 0px 50px;
+    flex-direction: column;
+    gap: 20px;
+    opacity: 0.6;
+    color: rgba(255, 255, 255, 0.833);
+
+
+
+
+}
+
+.about-mainSec{
+    display: flex;
+    height: 60vh;
+    justify-content:center;
+    gap: 5%;
+    margin-top: 40px;
+
+
+}
+
+.teen-img{
+    height: 100%;
+    border-radius: 20px;
+    opacity: 0.6;
+    filter: brightness(0.8);
+
+} 
+.aboutUs-desc-paragraph {
+    line-height: 1.5;  /* Adjust value as needed */
+
+}
+
+.about-us-secondary-title{
+    width: fit-content;
+    margin-left: 11%;
+    color: rgba(255, 255, 255, 0.509);
+    margin-bottom: -10px;
+}
+
+@media screen and (max-width:2020px){
+    .main-about{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-mainSec{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        gap: 60px;
+    }
+    .aboutUs-desc{
+        width: 40%;
+        margin-right: auto;
+        margin-left: auto;
+
+    }
+    .teen-img{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+
+    
+    } 
+}
