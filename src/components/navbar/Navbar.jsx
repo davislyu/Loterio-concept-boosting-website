@@ -20,7 +20,7 @@ const Navbar = () => {
     return(
         <nav className="nav">
             <div className="logo"><img src={wowLogo} alt="" /><span>Loterio.</span></div>
-            <ul className={`navlinks ${active}`}>
+            <ul className={`navlinks ${active}`} onClick={handleToggle} >
                 <li className="navlink">
                 <Link to="/">Home</Link>
                 </li>
