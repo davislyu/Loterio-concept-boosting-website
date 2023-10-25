@@ -1,94 +1,101 @@
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .main-about {
-    height: 100%;
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-image: linear-gradient(rgba(10, 10, 10, 0.829), rgba(0, 0, 0, 0.426)), url('../../assets/aboutBackground.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(
+      rgba(10, 10, 10, 0.829),
+      rgba(0, 0, 0, 0.426)
+    ),
+    url("../../assets/aboutBackground.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 .about-mainSec {
-    display: flex;
-    padding: 40px 10%;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  padding: 40px 10%;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .aboutUs-desc {
-    flex: 1;
-    background: rgb(0, 33, 65);
-    border-radius: 20px;
-    padding: 20px;
-    opacity: 0.9;
-    color: white;
-    overflow: auto;
+  flex: 1;
+  background: rgb(0, 33, 65);
+  border-radius: 20px;
+  padding: 20px;
+  opacity: 0.9;
+  color: white;
+  overflow: auto;
 }
 
 .teen-img {
-    flex: 1;
-    max-width: 45%;
-    height: auto;   /* Make sure height is set to auto */
-    border-radius: 20px;
-    margin-left: 5%;
-    opacity: 0.9;
-}    
+  flex: 1;
+  max-width: 45%;
+  height: auto;
+  border-radius: 20px;
+  margin-top: -20%;
+  margin-left: 5%;
+  opacity: 0.9;
+}
 
 .aboutUs-desc-title {
-    font-size: 32px;
-    margin-bottom: 20px;
+  font-size: 32px;
+  margin-bottom: 20px;
 }
 
 .aboutUs-desc-paragraph {
-    margin-bottom: 20px;
-    line-height: 1.6;
+  margin-bottom: 20px;
+  line-height: 1.6;
 }
 
 @media screen and (max-width: 992px) {
-    .about-mainSec {
-        flex-direction: column;
-        gap: 20px;
-    }
+  .about-mainSec {
+    flex-direction: column;
+    gap: 20px;
+  }
 
-    .aboutUs-desc, .teen-img {
-        max-width: 100%;
-        margin: 0;
-    }
+  .aboutUs-desc,
+  .teen-img {
+    max-width: 100%;
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .aboutUs-desc-title {
-        font-size: 24px;
-    }
+  .aboutUs-desc-title {
+    font-size: 24px;
+  }
 
-    .about-mainSec {
-        padding: 20px 5%;
-    }
+  .about-mainSec {
+    padding: 20px 5%;
+  }
 
-    .aboutUs-desc {
-        padding: 10px;
-    }
+  .aboutUs-desc {
+    padding: 10px;
+  }
 }
 
 @media screen and (max-width: 480px) {
-    .aboutUs-desc-title {
-        font-size: 20px;
-    }
+  .aboutUs-desc-title {
+    font-size: 20px;
+  }
 
-    .aboutUs-desc-paragraph {
-        font-size: 14px;
-    }
-    .teen-img {
-        width: 100%;   /* Set width to 100% */
-        height: auto;  /* Ensure height adjusts according to width */
-    }
+  .aboutUs-desc-paragraph {
+    font-size: 14px;
+  }
+  .teen-img {
+    width: 100%; /* Set width to 100% */
+    height: auto; /* Ensure height adjusts according to width */
+  }
 }
