@@ -3,14 +3,9 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  color: white;
-  
-  
-  font-family: "Martel", serif;
-  color: white;
 }
 
-.order-main {
+.main-about {
   height: 100%;
   min-height: 100vh;
   width: 100%;
@@ -18,157 +13,89 @@ body {
   flex-direction: column;
   background-image: linear-gradient(
       rgba(10, 10, 10, 0.829),
-      rgba(0, 0, 0, 0.066)
+      rgba(0, 0, 0, 0.426)
     ),
-    url("../../assets/warcraftWallpaper.jpg");
+    url("../../assets/aboutBackground.jpg");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  padding: 20px;
 }
 
-.order-header {
+.about-mainSec {
   display: flex;
-  flex-direction: column;
-  width: 90%;
-  height: fit-content;
-  background: rgb(0, 33, 65);
-  border-radius: 12px;
-  padding: 20px;
-}
-
-.order-header-title {
-  font-size: 30px;
-}
-
-.order-choices {
-
-  border: 1px solid yellow;
-  margin-top: 5vh;
-  padding: 24px;
-  display: flex;
-  height: 100%;
-  flex-wrap:wrap;
-  gap: 4vh;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.choice-card {
-  width: 304px;
-  height: 375px;
-  flex-wrap: wrap;
-  gap: 10vh;
-  justify-content: center;
-}
-
-.choice-card {
-  width: 43vh;
-  height: 410px;
-  border: 1px solid white;
-  border-radius: 12px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;  
-}
-.price-info {
-  display: flex;
-  
-=======
-}
-.price-info {
-  display: flex;
-}
-
-.price-main {
-  display: flex;
-<<<<<<< HEAD
-  border: 1px solid cyan;
->>>>>>> origin/master
-  width: 100%;
+  padding: 40px 10%;
   justify-content: space-between;
-  padding: 0px 10px;
   align-items: center;
-  color: black;
-
 }
 
-.card-title {
-  font-size: 2vh;
-  font-weight: 600;
-  
+.aboutUs-desc {
+  flex: 1;
+  background: rgb(0, 33, 65);
+  border-radius: 20px;
+  padding: 20px;
+  opacity: 0.9;
+  color: white;
+  overflow: auto;
 }
 
-.card-title {
-  font-size: 3vh;
-  font-weight: 600;
+.teen-img {
+  flex: 1;
+  max-width: 45%;
+  height: auto;
+  border-radius: 20px;
+  margin-top: 10vh;
+  margin-left: 5%;
+  opacity: 0.9;
 }
 
-.list-choice-card-options-div,
-.normal-choice-card-desc,
-.next-msg {
-  margin-top: 1vh;
+.aboutUs-desc-title {
+  font-size: 32px;
+  margin-bottom: 20px;
 }
 
-.raidTime {
-  width: fit-content;
-  padding: 1px 5px;
-  height: fit-content;
-  border-radius: 8px;
-  color: black;
-  font-weight: 600;
-  background-color: rgb(255, 255, 255,0.4); 
+.aboutUs-desc-paragraph {
+  margin-bottom: 20px;
+  line-height: 1.6;
 }
 
+@media screen and (max-width: 992px) {
+  .about-mainSec {
+    flex-direction: column;
+    gap: 20px;
+  }
 
-.raid-times {
-  display: flex;
-  gap: 1.5vh;
-  
-  border: 1px solid white;
-  border-radius: 8px;
-}
-.raid-times {
-  display: flex;
-  gap: 1.5vh;
-}
-
-.normal-choice-card-header,
-.list-choice-card-header,
-.times-choice-card-header {
-  margin-top: 35%;
+  .aboutUs-desc,
+  .teen-img {
+    max-width: 100%;
+    margin: 0;
+  }
 }
 
-.price {
-  height: 100%;
-  display: flex;
-  align-items: flex-end;
-  font-size: 1.2rem;
-  font-family:Arial, Helvetica, sans-serif;
-  font-weight: 600;
-  margin-left: 6px;
-  font-family: 'Titillium Web', sans-serif;
+@media screen and (max-width: 768px) {
+  .aboutUs-desc-title {
+    font-size: 24px;
+  }
+
+  .about-mainSec {
+    padding: 20px 5%;
+  }
+
+  .aboutUs-desc {
+    padding: 10px;
+  }
 }
 
-.price-icon a {
-  font-size: 4vh;
-  color: rgb(124, 183, 238);
-  display: inline-block;
-}
-.price-main{
-  
-}
-  border: 1px solid red;
-  height: 100%;
-  display: flex;
-  align-items: flex-end;
-}
+@media screen and (max-width: 480px) {
+  .aboutUs-desc-title {
+    font-size: 20px;
+  }
 
-/* .price-main a {
-  display: flex;
-  border: 2px solid yellow;
-  height: 100%;
-} */
+  .aboutUs-desc-paragraph {
+    font-size: 14px;
+  }
+  .teen-img {
+    width: 100%; /* Set width to 100% */
+    height: auto; /* Ensure height adjusts according to width */
+  }
+}
