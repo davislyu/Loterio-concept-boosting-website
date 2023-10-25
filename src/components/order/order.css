@@ -3,6 +3,9 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  color: white;
+  
+  
   font-family: "Martel", serif;
   color: white;
 }
@@ -40,11 +43,22 @@ body {
 }
 
 .order-choices {
+
   border: 1px solid yellow;
   margin-top: 5vh;
   padding: 24px;
   display: flex;
   height: 100%;
+  flex-wrap:wrap;
+  gap: 4vh;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.choice-card {
+  width: 304px;
+  height: 375px;
   flex-wrap: wrap;
   gap: 10vh;
   justify-content: center;
@@ -58,6 +72,12 @@ body {
   padding: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;  
+}
+.price-info {
+  display: flex;
+  
+=======
 }
 .price-info {
   display: flex;
@@ -65,11 +85,21 @@ body {
 
 .price-main {
   display: flex;
+<<<<<<< HEAD
   border: 1px solid cyan;
+>>>>>>> origin/master
   width: 100%;
   justify-content: space-between;
   padding: 0px 10px;
   align-items: center;
+  color: black;
+
+}
+
+.card-title {
+  font-size: 2vh;
+  font-weight: 600;
+  
 }
 
 .card-title {
@@ -87,6 +117,17 @@ body {
   width: fit-content;
   padding: 1px 5px;
   height: fit-content;
+  border-radius: 8px;
+  color: black;
+  font-weight: 600;
+  background-color: rgb(255, 255, 255,0.4); 
+}
+
+
+.raid-times {
+  display: flex;
+  gap: 1.5vh;
+  
   border: 1px solid white;
   border-radius: 8px;
 }
@@ -102,6 +143,24 @@ body {
 }
 
 .price {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  font-size: 1.2rem;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  margin-left: 6px;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.price-icon a {
+  font-size: 4vh;
+  color: rgb(124, 183, 238);
+  display: inline-block;
+}
+.price-main{
+  
+}
   border: 1px solid red;
   height: 100%;
   display: flex;
