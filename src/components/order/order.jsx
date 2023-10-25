@@ -1,5 +1,13 @@
 import "./order.css";
 import { BsFillArrowRightSquareFill } from "react-icons/bs";
+import goldPic from "../../assets/order/gold.jpeg"
+import dragonFlight from "../../assets/order/dragonFlight.webp"
+import pinkNpc from "../../assets/order/npcPink.webp"
+import redDragon from "../../assets/order/redDragon.webp"
+import levelBoost from "../../assets/order/levelBoosting.webp"
+import blueDragon from "../../assets/order/blueDragon.webp"
+
+
 const Order = () => {
   return (
     <div className="order-main">
@@ -15,11 +23,13 @@ const Order = () => {
       </header>
       <div className="order-choices">
         <ChoiceNormal
+          picUrl={goldPic}
           title="WoW Gold"
-          desc="Buy WoW Gold, any amount of gold on Each Realm in Stock. Cheap WoW Gold with daily prices update. More than 100,000 positive reviews. Delivery time in most cases is less than 15 minutes, depending on Realm."
+          desc="Buy WoW Gold, any amount of gold on Each Realm in Stock.  More than 100,000 positive reviews. Delivery time in most cases is less than 15 minutes, depending on Realm."
           price={15.0}
         />
         <ChoiceList
+          picUrl={dragonFlight}
           title="Prepare for Dragon Flight patch 12.2"
           op1="Grab seasonal rewards"
           op2="Achivments,Mounts,Titles"
@@ -27,6 +37,7 @@ const Order = () => {
           price={34}
         />
         <ChoiceTimes
+          picUrl={pinkNpc}
           title="atSC Heroic Plus Bonus Mythic+ Run"
           time1="11:00"
           time2="14:00"
@@ -35,6 +46,7 @@ const Order = () => {
           price="45"
         />
         <ChoiceTimes
+          picUrl={redDragon}
           title="Aberrus Heroic"
           time1="11:00"
           time2="14:00"
@@ -43,6 +55,7 @@ const Order = () => {
           price="49"
         />
         <ChoiceList
+          picUrl={levelBoost}
           title="Power Leveling"
           op1="Fastest leveling options"
           op2="Choose any level range"
@@ -50,6 +63,7 @@ const Order = () => {
           price="90"
         />
         <ChoiceList
+          picUrl={blueDragon}
           title="Dawn of the infinite"
           op1="Heroic and Mythic 0+"
           op2="Up to 3 loot traders"
@@ -65,7 +79,13 @@ export default Order;
 //*******Choice-card******** */
 const ChoiceNormal = (props) => {
   return (
-    <div className="choice-card">
+<div className="choice-card" style={{    
+    backgroundImage: `
+        linear-gradient(to top, #047382 10%, #0000006a 100%),
+        url(${props.picUrl})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center center"
+}}>
       <div className="normal-choice-card-header">
         <h1 className="normal-choice-card-title card-title">{props.title}</h1>
         <p className="normal-choice-card-desc">{props.desc}</p>
@@ -77,11 +97,14 @@ const ChoiceNormal = (props) => {
   );
 };
 //*******Choice-card******** */
-
 const ChoiceList = (props) => {
   return (
-    <div className="choice-card">
-      <div className="list-choice-card-header">
+    <div className="choice-card" style={{    backgroundImage: `
+    linear-gradient(to top, #047382 10%, #0000006a 100%)
+    , 
+    url(${props.picUrl})`,
+backgroundSize: "cover",
+backgroundPosition: "center center" }}>      <div className="list-choice-card-header">
         <h1 className="card-title">{props.title}</h1>
       </div>
       <div className="list-choice-card-options-div">
@@ -91,18 +114,24 @@ const ChoiceList = (props) => {
           <li className="list-option">{props.op3}</li>
         </ul>
       </div>
-      <div className="price">
+      <div className="price">  {/* Added this div */}
         <Price price={props.price} />
       </div>
     </div>
   );
 };
+
 //*******Choice-card******** */
 
 const ChoiceTimes = (props) => {
   return (
-    <div className="choice-card">
-      <div className="times-choice-card-header">
+    <div className="choice-card" style={{    backgroundImage: `
+    linear-gradient(to top, #047382 10%, #0000006a 100%)
+    , 
+    url(${props.picUrl})`,
+backgroundSize: "cover",
+backgroundPosition: "center center" }}>  
+    <div className="times-choice-card-header">
         <div className="times-title">
           <h1 className="card-title">{props.title}</h1>
         </div>
