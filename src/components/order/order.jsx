@@ -12,7 +12,7 @@ const Order = () => {
   return (
     <div className="order-main">
       <header className="order-header">
-        <h1 className="order-header-title">WoW Bossting</h1>
+        <h1 className="order-header-title">WoW Boosting</h1>
         <p className="order-header-desc   ">
           Overgear provides cheap WoW boosting of all types: character or PvP
           boosting, Raid or Dungeon carry, Powerleveling, farming & more to save
@@ -25,7 +25,7 @@ const Order = () => {
         <ChoiceNormal
           picUrl={goldPic}
           title="WoW Gold"
-          desc="Buy WoW Gold, any amount of gold on Each Realm in Stock.  More than 100,000 positive reviews. Delivery time in most cases is less than 15 minutes, depending on Realm."
+          desc="Buy WoW Gold, any amount of gold on Each Realm in Stock. Cheap WoW Gold with daily prices update. More than 100,000 positive reviews. Delivery time in most cases is less than 15 minutes, depending on Realm."
           price={15.0}
         />
         <ChoiceList
