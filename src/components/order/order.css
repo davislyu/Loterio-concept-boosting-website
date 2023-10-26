@@ -57,8 +57,11 @@ body {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around; /* Distributes space between the content */
+  justify-content: space-between;
+  background-size: cover;
+  background-position: center center;
 }
+
 .price-info {
   display: flex;
 }

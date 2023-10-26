@@ -1,16 +1,27 @@
+import { useState, useEffect } from "react";
 import "./order.css";
 import { BsFillArrowRightSquareFill } from "react-icons/bs";
-import goldPic from "../../assets/order/gold.jpeg"
-import dragonFlight from "../../assets/order/dragonFlight.webp"
-import pinkNpc from "../../assets/order/npcPink.webp"
-import redDragon from "../../assets/order/redDragon.webp"
-import levelBoost from "../../assets/order/levelBoosting.webp"
-import blueDragon from "../../assets/order/blueDragon.webp"
-
+import goldPic from "../../assets/order/gold.jpeg";
+import dragonFlight from "../../assets/order/dragonFlight.webp";
+import pinkNpc from "../../assets/order/npcPink.webp";
+import redDragon from "../../assets/order/redDragon.webp";
+import levelBoost from "../../assets/order/levelBoosting.webp";
+import blueDragon from "../../assets/order/blueDragon.webp";
+import Popup from "../Popup/Popup";
 
 const Order = () => {
+  const [timedPopup, setTimedPopup] = useState(false);
+
+  useEffect(() => {
+    const toggleHidden = () => {
+      setTimedPopup(true);
+    };
+    const timeOutId = setTimeout(toggleHidden, 3000);
+  }, []);
   return (
     <div className="order-main">
+      <Popup trigger={timedPopup} setTrigger={setTimedPopup} />
+
       <header className="order-header">
         <h1 className="order-header-title">WoW Boosting</h1>
         <p className="order-header-desc   ">
@@ -25,7 +36,7 @@ const Order = () => {
         <ChoiceNormal
           picUrl={goldPic}
           title="WoW Gold"
-          desc="Buy WoW Gold, any amount of gold on Each Realm in Stock. Cheap WoW Gold with daily prices update. More than 100,000 positive reviews. Delivery time in most cases is less than 15 minutes, depending on Realm."
+          desc="Buy WoW Gold, any amount of gold on Each Realm in Stock. More than 100,000 positive reviews. Delivery time in most cases is less than 15 minutes, depending on Realm."
           price={15.0}
         />
         <ChoiceList
@@ -79,13 +90,16 @@ export default Order;
 //*******Choice-card******** */
 const ChoiceNormal = (props) => {
   return (
-<div className="choice-card" style={{    
-    backgroundImage: `
+    <div
+      className="choice-card"
+      style={{
+        backgroundImage: `
         linear-gradient(to top, #047382 10%, #0000006a 100%),
         url(${props.picUrl})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center center"
-}}>
+        backgroundSize: "cover",
+        backgroundPosition: "center center",
+      }}
+    >
       <div className="normal-choice-card-header">
         <h1 className="normal-choice-card-title card-title">{props.title}</h1>
         <p className="normal-choice-card-desc">{props.desc}</p>
@@ -99,12 +113,19 @@ const ChoiceNormal = (props) => {
 //*******Choice-card******** */
 const ChoiceList = (props) => {
   return (
-    <div className="choice-card" style={{    backgroundImage: `
+    <div
+      className="choice-card"
+      style={{
+        backgroundImage: `
     linear-gradient(to top, #047382 10%, #0000006a 100%)
     , 
     url(${props.picUrl})`,
-backgroundSize: "cover",
-backgroundPosition: "center center" }}>      <div className="list-choice-card-header">
+        backgroundSize: "cover",
+        backgroundPosition: "center center",
+      }}
+    >
+      {" "}
+      <div className="list-choice-card-header">
         <h1 className="card-title">{props.title}</h1>
       </div>
       <div className="list-choice-card-options-div">
@@ -114,7 +135,9 @@ backgroundPosition: "center center" }}>      <div className="list-choice-card-he
           <li className="list-option">{props.op3}</li>
         </ul>
       </div>
-      <div className="price">  {/* Added this div */}
+      <div className="price">
+        {" "}
+        {/* Added this div */}
         <Price price={props.price} />
       </div>
     </div>
@@ -125,13 +148,18 @@ backgroundPosition: "center center" }}>      <div className="list-choice-card-he
 
 const ChoiceTimes = (props) => {
   return (
-    <div className="choice-card" style={{    backgroundImage: `
+    <div
+      className="choice-card"
+      style={{
+        backgroundImage: `
     linear-gradient(to top, #047382 10%, #0000006a 100%)
     , 
     url(${props.picUrl})`,
-backgroundSize: "cover",
-backgroundPosition: "center center" }}>  
-    <div className="times-choice-card-header">
+        backgroundSize: "cover",
+        backgroundPosition: "center center",
+      }}
+    >
+      <div className="times-choice-card-header">
         <div className="times-title">
           <h1 className="card-title">{props.title}</h1>
         </div>
