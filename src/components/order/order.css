@@ -46,8 +46,8 @@ body {
   display: flex;
   height: 100%;
   flex-wrap: wrap;
-  gap: 4vh;
-  width: 80%;
+  gap: 9vh;
+  width: auto;
   margin-left: auto;
   margin-right: auto;
 }
@@ -55,6 +55,7 @@ body {
 .choice-card {
   width: 304px;
   height: 375px;
+  box-sizing: border-box;
   border-radius: 12px;
   padding: 20px;
   display: flex;
