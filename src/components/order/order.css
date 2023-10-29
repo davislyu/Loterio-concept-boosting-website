@@ -27,6 +27,8 @@ body {
 .order-header {
   display: flex;
   flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
   width: 90%;
   height: fit-content;
   background: rgb(0, 33, 65);
@@ -60,6 +62,8 @@ body {
   justify-content: space-between;
   background-size: cover;
   background-position: center center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .price-info {
@@ -93,6 +97,8 @@ body {
 .raid-times {
   display: flex;
   gap: 1.5vh;
+  width: 80%;
+  flex-wrap: wrap;
 }
 
 .normal-choice-card-header,
