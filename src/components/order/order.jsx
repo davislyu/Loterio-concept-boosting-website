@@ -197,7 +197,7 @@ const Price = (props) => {
     <div className="price-main">
       <div className="price-info">
         <h2 className="from">FROM</h2>
-        <div className="price">${props.price}</div>
+        <div className="price">${props.price}.00</div>
       </div>
       <div className="price-icon">
         <a href="#">

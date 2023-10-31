@@ -121,6 +121,12 @@ body {
 
 .price-icon a {
   font-size: 4vh;
-  color: rgb(124, 183, 238);
+  color: #f1f4f5a1;
   display: inline-block;
+}
+
+.from,
+.price {
+  font-weight: 300;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
