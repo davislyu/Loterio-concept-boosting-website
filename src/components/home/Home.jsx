@@ -12,10 +12,6 @@ import pp5 from "../../assets/pp5.webp";
 const Home = () => {
   return (
     <div className="main">
-      <header className="title">
-        <h1>BOOSTER TEAM</h1>
-      </header>
-
       <div className="team-info">
         <div className="desc">
           <h1>Meet our Warcraft Elite Boosters</h1>
