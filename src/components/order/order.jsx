@@ -130,9 +130,9 @@ const ChoiceList = (props) => {
       </div>
       <div className="list-choice-card-options-div">
         <ul className="list-choice-card-L">
-          <li className="list-option">{props.op1}</li>
-          <li className="list-option">{props.op2}</li>
-          <li className="list-option">{props.op3}</li>
+          <li className="list-option">✤ {props.op1}</li>
+          <li className="list-option">✤ {props.op2}</li>
+          <li className="list-option">✤ {props.op3}</li>
         </ul>
       </div>
       <div className="price">

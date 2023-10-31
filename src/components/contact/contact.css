@@ -71,6 +71,9 @@
 .email input {
   width: 100%;
 }
+.helpWith h3 {
+  text-align: center;
+}
 
 .helpWith textarea {
   width: 100%;
@@ -113,6 +116,9 @@ input {
 
 .contactUsMain h3 {
   font-weight: 400;
+}
+.contactInfo p {
+  padding: 30px;
 }
 
 input,
