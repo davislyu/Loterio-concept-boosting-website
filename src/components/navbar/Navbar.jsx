@@ -35,9 +35,6 @@ const Navbar = () => {
         <li className="navlink">
           <Link to="/contact">Contact</Link>
         </li>
-        <li className="navlink">
-          <Link to="/info">Info</Link>
-        </li>
       </ul>
       <div onClick={handleToggle} className="icon">
         {active === "noToggle" ? <MdOutlineMenuOpen /> : <TfiClose />}
